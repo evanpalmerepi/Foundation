@@ -47,18 +47,18 @@
                         </div>
                     </li>
                 }
-
-                <li>
-                    <div class="dropdown">
-                        <div class="icon-menu icon-menu--has-badge jsCartBtn" data-toggle="dropdown" data-offset="-162, -2" data-flip="false" id="js-cart" reload="0" data-cartcontainer="#js-cart-popover" data-reloadurl="/defaultcart/LoadCartItems" title="Cart">
-                            <i data-feather="shopping-cart"></i>
-                            <span class="icon-menu__badge">@((int)Model.MiniCart.ItemCount)</span>
-                        </div>
-                        @Html.Partial("_HeaderCart", Model.MiniCart)
-                    </div>
-                </li>
-                if (Model.ShowSharedCart)
+                if (false)
                 {
+
+                    <li>
+                        <div class="dropdown">
+                            <div class="icon-menu icon-menu--has-badge jsCartBtn" data-toggle="dropdown" data-offset="-162, -2" data-flip="false" id="js-cart" reload="0" data-cartcontainer="#js-cart-popover" data-reloadurl="/defaultcart/LoadCartItems" title="Cart">
+                                <i data-feather="shopping-cart"></i>
+                                <span class="icon-menu__badge">@((int)Model.MiniCart.ItemCount)</span>
+                            </div>
+                            @Html.Partial("_HeaderCart", Model.MiniCart)
+                        </div>
+                    </li>
                     <li>
                         <div class="dropdown">
                             <div class="icon-menu icon-menu--has-badge jsSharedCartBtn" data-toggle="dropdown" data-offset="-162, -2" data-flip="false" reload="0" data-cartcontainer="#jsSharedCartContainer" data-reloadurl="/sharedCart/LoadMiniSharedCart" title="Shared Cart">

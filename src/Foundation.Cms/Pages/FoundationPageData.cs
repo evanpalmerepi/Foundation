@@ -226,12 +226,38 @@ namespace Foundation.Cms.Pages
 
         #endregion
 
+        #region Review
+        [Display(
+          GroupName = CmsTabNames.Review, Name = "Review In",
+          Order = 110)]
+        public virtual string ReviewIn { get; set; }
+
+        [Display(
+          GroupName = CmsTabNames.Review, Name = "Amount of time",
+          Order = 120)]
+        [SelectOne(SelectionFactoryType = typeof(DaysSelectionFactory))]
+        public virtual string AmountOfTime { get; set; }
+
+        #endregion
+
         public override void SetDefaultValues(ContentType contentType)
         {
             base.SetDefaultValues(contentType);
 
             TeaserTextAlignment = "Left";
             TeaserColorTheme = "Dark";
+        }
+    }
+
+    public class DaysSelectionFactory : ISelectionFactory
+    {
+
+        public IEnumerable<ISelectItem> GetSelections(ExtendedMetadata metadata)
+        {
+            return new ISelectItem[] { new SelectItem() { Text = "Days", Value = "Days" }, new SelectItem() { Text = "Weeks", Value = "Weeks" }
+            , new SelectItem() { Text = "Months", Value = "Months" }
+            , new SelectItem() { Text = "Year", Value = "Year" }};
+
         }
     }
 }
