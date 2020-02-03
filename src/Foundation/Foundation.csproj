@@ -1826,10 +1826,6 @@
     <Content Include="modules\_protected\EPiServer.Social\EPiServerSocial.config" />
     <Content Include="modules\_protected\EPiServer.Social\EPiServer.Social.zip" />
     <Content Include="modules\_protected\EPiServer.PdfPreview\EPiServer.PdfPreview.zip" />
-    <Content Include="modules\_protected\advanced-cms.Reviews\web.config" />
-    <Content Include="modules\_protected\advanced-cms.Reviews\advanced-cms.Reviews.zip" />
-    <Content Include="modules\_protected\advanced-cms.ExternalReviews\web.config" />
-    <Content Include="modules\_protected\advanced-cms.ExternalReviews\advanced-cms.ExternalReviews.zip" />
     <Content Include="Features\Login\Index.cshtml" />
     <Content Include="Features\Shared\Foundation\_LoginLayout.cshtml" />
     <Content Include="Features\Login\Register.cshtml" />
@@ -1892,6 +1888,10 @@
     <Content Include="modules\_protected\ImageProcessor.Web.Episerver.UI.Blocks\Views\ProcessImageBlock.cshtml" />
     <Content Include="modules\_protected\ImageProcessor.Web.Episerver.UI.Blocks\Views\CropProcessImageBlock.cshtml" />
     <Content Include="modules\_protected\ImageProcessor.Web.Episerver.UI.Blocks\ImageProcessor.Web.Episerver.UI.Blocks.zip" />
+    <Content Include="modules\_protected\advanced-cms.Reviews\web.config" />
+    <Content Include="modules\_protected\advanced-cms.Reviews\advanced-cms.Reviews.zip" />
+    <Content Include="modules\_protected\advanced-cms.ExternalReviews\web.config" />
+    <Content Include="modules\_protected\advanced-cms.ExternalReviews\advanced-cms.ExternalReviews.zip" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
