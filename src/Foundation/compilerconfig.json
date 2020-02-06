@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Assets/scss/components/_mobile-navigation.css",
+    "inputFile": "Assets/scss/components/_mobile-navigation.scss"
+  },
+  {
+    "outputFile": "Assets/scss/main.css",
+    "inputFile": "Assets/scss/main.scss"
+  }
+]
