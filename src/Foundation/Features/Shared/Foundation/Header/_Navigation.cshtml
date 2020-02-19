@@ -7,7 +7,7 @@
             @Html.Partial("_Menu", Model.MenuItems)
         </div>
         <a href="/" class="navigation__logo flex-center" style="@(Model.DemoHomePage.HeaderMenuStyle == "LeftLogo" ? "order: -1" : "")">
-            @Html.PropertyFor(model => model.DemoHomePage.SiteLogo, new { @class = "img-fluid" })
+            @Html.PropertyFor(model => model.DemoHomePage.SiteLogo, new { @class = "img-fluid", style = "width: 100%"})
         </a>
         <ul class="navigation__right">
             @if (Request.IsAuthenticated)
